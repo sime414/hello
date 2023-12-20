@@ -20,14 +20,14 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
-    Button hello;
+    Button hello123;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        hello = findViewById(R.id.hello);
+        hello123 = findViewById(R.id.hello);
 
         @SuppressLint({"LocalSuppress", "MissingInflatedId"}) Button playButton = findViewById(R.id.playButton);
         playButton.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 playAudioFromUrl("https://firebasestorage.googleapis.com/v0/b/puzzlesonline-a2563.appspot.com/o/biodynamic-impact-braam-tonal-dark-176441.mp3");
             }
         });
-        hello.setOnClickListener(new View.OnClickListener() {
+        hello123.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
